@@ -1,0 +1,9 @@
+{
+    "python.analysis.extraPaths": [
+        "./modelling-venv/lib/python3.9/site-packages"
+    ],
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportShadowedImports": "none"
+    }
+}
+

@@ -1,0 +1,14 @@
+backing at higher odds is more favourable to the bettor
+laying at lower odds is more favourable to the bettor
+
+therefore, based on OUR MODELS p(p1 win) estimate, we calculate two things:
+0/ the user specifies the EV target (%)
+1/ calculate the MINIMUM BACK odds ...
+2/ calculate the MAXIMUM LAY odds ...
+... for our EV target to be satistified
+
+Note, that BACKING P1 == LAYING P2, and, LAYING P1 == BACKING P2
+Therefore in some cases, it is favourable to take the other side (which our model tells us)
+
+
+We then scan the odds, and extract the games for which satisfy our odds threshold

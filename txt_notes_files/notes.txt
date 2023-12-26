@@ -1,0 +1,13 @@
+issue i am facing is that the programme runs from the terminal ' python my_script.py ' but does not run when i press VS
+code run button. Module not found errors for tensorflow and sklearn
+
+have a file ModelA.txt that explains the model ins-and-outs, like a step by step guide of model and how we run/update it etc
+
+# Importing Modules: You are importing various modules from your package. These modules likely contain functions and classes related to reading, refreshing, updating, and configuring data. By importing them in the __init__.py file, you make them accessible as part of the package's namespace.
+
+# Exposing Modules: By importing these modules in __init__.py, you make them accessible to users of your package. This means that when someone imports your package, they can access these modules and their contents without needing to import them separately.
+
+# Defining Package-Level Functions: You might define package-level functions or variables in __init__.py if they are shared across multiple modules within your package.
+
+inside my model director, i jave an _init_ ; this makes modela package and allows me to access functions from modelA file outside of the model directory
+

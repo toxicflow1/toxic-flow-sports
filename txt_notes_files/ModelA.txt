@@ -1,0 +1,5 @@
+TODO: Fill out explaining the model
+
+The way how we use classes and objects for the model is useful, i think, because we can train the model
+on long-time horizon and short time horizon data, record the ratings and rpedictions from each, then combine in an ensemble?
+    - i am not sure though how we will store these short - and - long time horizon ratings in the db; TO CONSULT

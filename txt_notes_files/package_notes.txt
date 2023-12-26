@@ -1,0 +1,8 @@
+my_package/
+    setup.py
+    my_module/
+        __init__.py
+        ModelA.py
+    other_module.py
+
+init files are needed in all modules, to tell python that the directory is part of the my_package

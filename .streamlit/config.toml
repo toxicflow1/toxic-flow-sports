@@ -1,0 +1,7 @@
+[server]
+enableCORS = false
+headless = true
+port = 8080
+enableXsrfProtection = true
+certfile = ./mli/api-ng-ssl/client-2048.crt
+keyfile = ./mli/api-ng-ssl/client-2048.key

@@ -2,6 +2,7 @@ import requests
 import json, datetime, urllib, urllib.request, urllib.error, requests
 import pandas as pd
 import certifi, ssl
+import streamlit as st
 
 
 pd.set_option('display.max_rows', 500)
@@ -29,9 +30,13 @@ def connect_API(username, password, app_key):
 
     payload = 'username=' + username + '&password=' + password
     headers = {'X-Application': app_key, 'Content-Type': 'application/x-www-form-urlencoded'}
+
+    certs = (st.secrets["TLS_CERTIFICATE_PATH"], st.secrets["TLS_KEY_PATH"])
+
     resp = requests.post('https://identitysso-cert.betfair.com/api/certlogin',data=payload,
-                         cert=('../api-ng-ssl/client-2048.crt',
-                               '../api-ng-ssl/client-2048.key'),
+                        #  cert=('../api-ng-ssl/client-2048.crt',
+                        #        '../api-ng-ssl/client-2048.key'),
+                         cert=certs,
                          headers=headers)
 
     if resp.status_code == 200:

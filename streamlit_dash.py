@@ -14,6 +14,14 @@ def give_me_actions():
     # connect to the market
     market_odds = mli.retrieve_current_odds_and_games(show_available_markets=True, marketType="MATCH_ODDS")
 
+    print()
+    print()
+    print()
+    print('MARKET ODDS')
+    print(market_odds)
+    print()
+    print()
+    print()
     # pull down our best-guess player ratings
     upcoming_games_player_ratings = database_engine.get_upcoming_rating()
 

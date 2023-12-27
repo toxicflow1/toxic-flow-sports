@@ -43,9 +43,16 @@ def connect_API(username, password, app_key):
 
         resp_json = resp.json()
 
+
+        st.logger.info(resp_json)
+
         print('---------------------------------')
         print('STATUS: {}'.format(resp_json['loginStatus']))
+        print()
+        print(' @@@ THE RESPONSE @@@@')
         print(resp_json)
+        print()
+        print()
         print('Session Token: {}'.format(resp_json['sessionToken']))
         print('---------------------------------')
     else:

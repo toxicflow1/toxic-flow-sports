@@ -43,6 +43,8 @@ def connect_API(username, password, app_key):
 
         resp_json = resp.json()
 
+        st.write(resp_json)
+
 
         logging.info(resp_json)
 

@@ -3,7 +3,7 @@ import json, datetime, urllib, urllib.request, urllib.error, requests
 import pandas as pd
 import certifi, ssl
 import streamlit as st
-
+import logging
 
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
@@ -44,7 +44,7 @@ def connect_API(username, password, app_key):
         resp_json = resp.json()
 
 
-        st.logger.info(resp_json)
+        logging.info(resp_json)
 
         print('---------------------------------')
         print('STATUS: {}'.format(resp_json['loginStatus']))

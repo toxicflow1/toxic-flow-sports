@@ -7,6 +7,11 @@ def calc_max_lay_odds(df, comm):
         set S to 1 then: EV = C p - (1-p)(L-1) = p ( C + L - 1) + (1 - L)
 
         -> rearrange for L: L = (EV + p - 1 - pC)/(p - 1)
+
+        Adi:x['EV_if_achieved (%)']+ x['p2_GW_prob']*(1-comm) - 1)/(x['p2_GW_prob']-1)
+            (1+x['EV_if_achieved (%)']+(1-comm)*(x['p2_GW_prob']))/(x['p1_GW_prob']+x['EV_if_achieved (%)']) 
+            For ['P1_LAY_MAX_ODDS']
+        
     """
 
     comm = 1 - comm
